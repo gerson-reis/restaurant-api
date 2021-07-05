@@ -3,3 +3,10 @@
 ################################################################################
 
 /restaurant-solution/restaurant-api/bin/Debug/net5.0
+/restaurant-solution/restaurant-api/obj
+/restaurant-solution/restaurant-repository/obj
+/restaurant-solution/restaurant-domain/obj
+/restaurant-solution/restaurant-application/obj
+/restaurant-solution/restaurant-application/bin/Debug/netcoreapp3.1
+/restaurant-solution/restaurant-domain/bin/Debug/netcoreapp3.1
+/restaurant-solution/restaurant-repository/bin/Debug/netcoreapp3.1
