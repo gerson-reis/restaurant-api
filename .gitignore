@@ -10,3 +10,5 @@
 /restaurant-solution/restaurant-application/bin/Debug/netcoreapp3.1
 /restaurant-solution/restaurant-domain/bin/Debug/netcoreapp3.1
 /restaurant-solution/restaurant-repository/bin/Debug/netcoreapp3.1
+/restaurant-solution/restaurant-IoC/bin/Debug/netcoreapp3.1
+/restaurant-solution/restaurant-IoC/obj
