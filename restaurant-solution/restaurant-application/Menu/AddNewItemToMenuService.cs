@@ -27,4 +27,25 @@ namespace restaurant_application.Menu
             await repository.Update(plate);
         }
     }
+
+    public class AddNewRestaurantService
+    {
+        public async Task Add(string nome, string adress)
+
+        {
+            var newRestaurant = new Restaurante(nome, adress);
+            var repository = new RestaurantRepository();
+            await repository.Add(newRestaurant);
+        }
+       // public async Task UpdateRestaurant(int id, string nome)
+        //{
+         //   var repository = new RestaurantRepository();
+
+           // var restaurante = await repository.GetById(id);
+            //restaurante.SetNome(nome);
+
+            //Sawait repository.Update(restaurante);
+        }
+    }
+
 }

@@ -15,5 +15,21 @@ namespace restaurant_api.Controllers
             await service.Add(nome, price);
             return View();
         }
+       public async Task<IActionResult> UpdatePlate(int id, string nome)
+        {
+            var service =  new AddNewItemToMenuService();
+            await service.UpdatePlate(id, nome);
+            return View();
+        }
     }
+    public class RestauranteController : Controller
+    { 
+        public async Task<IActionResult> AddRestaurant(string nome, string adress)
+        {
+            var service = new AddNewRestaurantService();
+            await service.Add(nome, adress);
+            return View();
+        }
+    }
+
 }

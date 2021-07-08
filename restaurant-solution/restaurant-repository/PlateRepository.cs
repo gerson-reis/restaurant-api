@@ -23,4 +23,12 @@ namespace restaurant_repository
             // adiciona um novo prato na base de dados atraves do ORM
         }
     }
+
+    public class RestaurantRepository
+    {
+        public async Task Add(Restaurante restaurante)
+        {
+
+        }
+    }
 }
