@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace restaurant_domain
+namespace Restaurant.Domain
 {
-    public class Restaurant
+    public class Establishment
     {
     }
 }

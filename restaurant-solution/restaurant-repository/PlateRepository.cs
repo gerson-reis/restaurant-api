@@ -4,12 +4,12 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace restaurant_repository
+namespace Restaurant.Repository
 {
     public class PlateRepository
     {
         public async Task Add(Plate plate)
-        { 
+        {
             // adiciona um novo prato na base de dados atraves do ORM
         }
 

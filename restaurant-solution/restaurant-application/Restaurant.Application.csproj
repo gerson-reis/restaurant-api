@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Restaurant.Application</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\restaurant-domain\Restaurant.Domain.csproj" />
+    <ProjectReference Include="..\restaurant-repository\Restaurant.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,8 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>restaurant_repository</RootNamespace>
+    <RootNamespace>Restaurant.API</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,10 +17,13 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\restaurant-domain\restaurant-domain.csproj" />
+    <ProjectReference Include="..\restaurant-application\Restaurant.Application.csproj" />
+    <ProjectReference Include="..\restaurant-repository\Restaurant.Repository.csproj" />
   </ItemGroup>
 
 </Project>

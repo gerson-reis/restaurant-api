@@ -1,20 +1,17 @@
-﻿using restaurant_domain;
-using restaurant_repository;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Restaurant.Repository;
+using restaurant_domain;
 using System.Threading.Tasks;
 
-namespace restaurant_application.Menu
+namespace Restaurant.Application.Menu
 {
     public class AddNewItemToMenuService
     {
         //um metodo que recebe os paramentros de um novo prato e adiciona no menu do restaurante escolhido
         public async Task Add(string nome, decimal price)
         {
-            var newPlate = new Plate(nome, price);
+            var newPlate = new Plate(nome);
             var repository = new PlateRepository();
-            await  repository.Add(newPlate);
+            await repository.Add(newPlate);
         }
 
         public async Task UpdatePlate(int id, string nome)

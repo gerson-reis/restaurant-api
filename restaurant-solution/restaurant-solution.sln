@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "restaurant-api", "restaurant-api\restaurant-api.csproj", "{75E733E6-2893-4C6E-9DC7-94CC9269B551}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restaurant.API", "restaurant-api\Restaurant.API.csproj", "{75E733E6-2893-4C6E-9DC7-94CC9269B551}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "restaurant-domain", "restaurant-domain\restaurant-domain.csproj", "{B6C57F55-9ABD-402E-9E99-31200740A9D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restaurant.Domain", "restaurant-domain\Restaurant.Domain.csproj", "{B6C57F55-9ABD-402E-9E99-31200740A9D5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "restaurant-application", "restaurant-application\restaurant-application.csproj", "{2DF1816E-5EBA-4551-B109-ACC5223A9A79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restaurant.Application", "restaurant-application\Restaurant.Application.csproj", "{2DF1816E-5EBA-4551-B109-ACC5223A9A79}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "restaurant-repository", "restaurant-repository\restaurant-repository.csproj", "{985EE873-C70C-46F2-9518-6FDA12E63998}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restaurant.Repository", "restaurant-repository\Restaurant.Repository.csproj", "{985EE873-C70C-46F2-9518-6FDA12E63998}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "restaurant-IoC", "restaurant-IoC\restaurant-IoC.csproj", "{BC61443F-27D9-4A8D-9F1F-F6B601A40CEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "restaurant-IoC", "restaurant-IoC\restaurant-IoC.csproj", "{BC61443F-27D9-4A8D-9F1F-F6B601A40CEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

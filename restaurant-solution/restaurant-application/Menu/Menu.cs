@@ -1,9 +1,11 @@
-﻿using Restaurant.Domain;
+﻿using restaurant_domain;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Restaurant.Domain;
 
-namespace restaurant_domain
+namespace Restaurant.Application.Menu
+
 {
     public class Menu
     {

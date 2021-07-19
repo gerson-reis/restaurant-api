@@ -1,11 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using restaurant_application.Menu;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using Restaurant.Application.Menu;
 using System.Threading.Tasks;
 
-namespace restaurant_api.Controllers
+namespace Restaurant.API.Controllers
 {
     public class MenuController : Controller
     {
