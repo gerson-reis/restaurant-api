@@ -27,6 +27,11 @@
 
 	<ItemGroup>
     <ProjectReference Include="..\restaurant-domain\Restaurant.Domain.csproj" />
+    <ProjectReference Include="..\Restaurant.Repository.Interfaces\Restaurant.Repository.Interfaces.csproj" />
   </ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="IRepository\" />
+	</ItemGroup>
 
 </Project>
