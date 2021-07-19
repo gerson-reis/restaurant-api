@@ -28,8 +28,8 @@ namespace restaurant_api
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Restaurant.API", Version = "v1" });
             });
 
-            services.AddDbContext<BaseContext>(options => options.UseSqlServer(@"Data Source=localhost\SQLExpress;Initial Catalog=restaurant;Integrated Security=true"));
-            //services.AddDbContext<BaseContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<BaseContext>(options => options.UseSqlServer("Data Source=BS123-LAP;Initial Catalog=restaurant;Integrated Security=true"));
+            //services.AddDbContext<BaseContext>(options => options.UseSqlServer(Configuration.GetSection("ConnectionStrings")["DefaultConnection"]));
 
         }
 
