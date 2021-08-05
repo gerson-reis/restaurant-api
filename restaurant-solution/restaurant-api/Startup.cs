@@ -6,6 +6,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Restaurant.Repository;
+using Restaurant.Repository.Interfaces;
+using restaurant_domain;
+using shopify.data.Repositories;
 
 namespace restaurant_api
 {
@@ -21,7 +24,6 @@ namespace restaurant_api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -29,8 +31,8 @@ namespace restaurant_api
             });
 
             services.AddDbContext<BaseContext>(options => options.UseSqlServer("Data Source=BS123-LAP;Initial Catalog=restaurant;Integrated Security=true"));
-            //services.AddDbContext<BaseContext>(options => options.UseSqlServer(Configuration.GetSection("ConnectionStrings")["DefaultConnection"]));
 
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline

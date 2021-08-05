@@ -69,6 +69,7 @@ namespace shopify.data.Repositories
         {
             if (entity == null) throw new ArgumentNullException("entity is null");
             entities.Remove(entity);
+            context.SaveChanges();
         }
     }
 }

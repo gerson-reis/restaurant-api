@@ -19,6 +19,8 @@ namespace Restaurant.Application.Menu
             var repository = new PlateRepository();
             //Oi
             var plate = await repository.GetById(id);
+            plate.UpdatePrice(5);
+
             plate.SetName(nome);
 
             await repository.Update(plate);

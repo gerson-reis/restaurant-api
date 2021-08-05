@@ -1,6 +1,9 @@
-﻿namespace restaurant_domain
+﻿using Restaurant.Domain;
+using System;
+
+namespace restaurant_domain
 {
-    public class Plate
+    public class Plate : BaseEntity
     {
         public Plate()
         {
@@ -24,8 +27,15 @@
 
         }
 
-        public int Id { get; set; }
+        public void UpdatePrice(decimal newPrice)
+        {
+            Price = newPrice;
+        }
+
+
         public string Name { get; private set; }
-        //public decimal Price { get; private set; }
+        public decimal? Cost { get; private set; }
+        public decimal? Price { get; private set; }
+        public decimal? OldPrice { get; private set; }
     }
 }
